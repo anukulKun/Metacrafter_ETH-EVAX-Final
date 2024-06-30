@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter DApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter DApp</h1>
+    <p>Current Count: <span id="count">Loading...</span></p>
+    <p>Connected Wallet Address: <span id="wallet">Loading...</span></p>
+    <button onclick="incrementCount()">Increment</button>
+    <button onclick="decrementCount()">Decrement</button>
+    <button onclick="resetCount()">Reset</button>
+</body>
+</html>
